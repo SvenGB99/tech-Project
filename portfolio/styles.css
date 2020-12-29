@@ -57,7 +57,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/New-backdrop-pic.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -69,29 +69,33 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
+  background-color: #0000007c;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 1.5px solid rgb(0, 0, 0);
   transition: all .5s;
+  transition:ease-in-out 2s;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
 .tag {
-  background-color: #efefef;
-  color: black;
+  background-color: #00000075;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: rgba(34, 34, 34, 0.527);
+  color: rgb(255, 253, 253);
 }
 .card {
   margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
+  padding: 20px 10px 10px;
+  min-width: 350px;
+  max-width: 400px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -99,7 +103,7 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #444242;
 }
 
 ul.skills {
@@ -110,14 +114,32 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #be5007;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.hobbies li:nth-child(odd) {
+  background: #0399ff;
+}
+
+ul.hobbies {
+  padding: 0;
+  text-align: center;
+}
+
+.hobbies li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #1309a1;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #05426b;
 }
 
 footer {
